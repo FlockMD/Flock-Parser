@@ -195,13 +195,11 @@ impl AhoCorasick {
         while i < text_chars.len() {
             let c = self.charmap.forward(text_chars[i]);
             if (self.goto.get(state, c) >= 0) {
-                
+                // TODO: finish implementing search
             }
-
         }
         found
     }
-
 
 }
 
